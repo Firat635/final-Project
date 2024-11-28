@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "./Carousel.css";
+import "./carousel.css";
 import { BsArrowRight } from "react-icons/bs";
 
 import "swiper/css";
@@ -71,3 +71,4 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
