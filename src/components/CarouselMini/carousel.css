@@ -1,60 +1,64 @@
 .carousel-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  
-  .mySwiper {
-    width: 100%;
-  }
-  
-  .slide-content {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #666;
-  }
-  
-  .slide-content img {
-    width: 200px;
-    height: 70px;
-    object-fit: contain;
-    margin-bottom: 10px;
-  }
-  
-  
-  
- 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.mySwiper {
+  width: 100%;
+}
+
+.slide-content {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #666;
+}
+
+.slide-content img {
+  width: 200px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333;
+  width: 25px;
+  height: 25px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #888;
+  transform: scale(1.1);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
   .swiper-button-prev,
   .swiper-button-next {
-    color: #333;
-    width: 25px; 
-    height: 25px;
-    transition: color 0.3s, transform 0.3s;
+    width: 20px;
+    height: 20px;
   }
-  
-  .swiper-button-prev:hover,
-  .swiper-button-next:hover {
-    color: #888;
-    transform: scale(1.1);
-  }
-  
+
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    font-size: 14px;
+    font-size: 12px;
   }
-  
- 
-  @media (max-width: 768px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-      width: 20px;
-      height: 20px;
-    }
-  
-    .swiper-button-prev::after,
-    .swiper-button-next::after {
-      font-size: 12px;
-    }
-  }
-  
+}
+
+.productsShopBox .swiper-slide {
+  width: 226px !important;
+}

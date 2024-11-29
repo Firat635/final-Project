@@ -536,3 +536,9 @@
         }
     }
 }
+.boxContainer{
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 10px;
+}

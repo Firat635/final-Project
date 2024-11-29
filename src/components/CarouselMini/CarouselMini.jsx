@@ -39,7 +39,6 @@ const CarouselMini = () => {
           <SwiperSlide key={index}>
             <div className="slide-content">
               <img src={logo.img} alt={logo.name} />
-              
             </div>
           </SwiperSlide>
         ))}

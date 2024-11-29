@@ -62,7 +62,7 @@ const Header = () => {
         </div>
         <div className="middleHeader py-4">
           <div className="logoBox">
-            <a href="http://">
+            <a href="/">
               <img
                 src="https://midas-theme.myshopify.com/cdn/shop/files/logo_c1cc906b-de91-4cb3-840b-9c2dd7e81e2a_125x@2x.png?v=1614727356"
                 alt=""
@@ -1303,7 +1303,6 @@ const Header = () => {
                         <div className="blogWebBox">
                           <div className="blogWebInfo">
                             <ul>
-                            
                               <li>
                                 <a href="/">Classic</a>
                               </li>
@@ -1312,7 +1311,7 @@ const Header = () => {
                               </li>
                               <li>
                                 <a href="/">
-                                Grid <IoIosArrowForward />
+                                  Grid <IoIosArrowForward />
                                   <div className="leftDropDown">
                                     <ul>
                                       <li>
@@ -1333,7 +1332,7 @@ const Header = () => {
                               </li>
                               <li>
                                 <a href="/">
-                                Masonry <IoIosArrowForward />
+                                  Masonry <IoIosArrowForward />
                                   <div className="leftDropDown">
                                     <ul>
                                       <li>
@@ -1348,7 +1347,7 @@ const Header = () => {
                               </li>
                               <li>
                                 <a href="/">
-                                Mask <IoIosArrowForward />
+                                  Mask <IoIosArrowForward />
                                   <div className="leftDropDown">
                                     <ul>
                                       <li>
@@ -1363,7 +1362,7 @@ const Header = () => {
                               </li>
                               <li>
                                 <a href="/">
-                                Single Post <IoIosArrowForward />
+                                  Single Post <IoIosArrowForward />
                                   <div className="leftDropDown">
                                     <ul>
                                       <li>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header/Header";
 import "bootstrap";
 import "./home.css";
@@ -13,8 +13,21 @@ import { GoRocket } from "react-icons/go";
 import { MdOutlineRestartAlt } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { IoHelpBuoyOutline } from "react-icons/io5";
+import { useDispatch, useSelector } from "react-redux";
+import { getProduct } from "../../redux/feature/product/ProductSlice.js";
+import Box from "../../components/Box/Box.jsx";
+import { Register } from "../../components/register/Register.jsx";
+// import Box from "../../components/Box/Box.jsx";
 
 const Home = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getProduct());
+  }, []);
+
+  let { data, loading } = useSelector((state) => state.product);
+
   return (
     <>
       <Header />
@@ -146,8 +159,13 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <CarouselBox />
-          <CarouselBox />
+          {loading ? (
+            <h2 className="text-center">Loading...</h2>
+          ) : (
+            <div className="d-flex flex-wrap boxContainer">
+              {data && data.map((item) => <Box item={item} />)}
+            </div>
+          )}
         </section>
         <section id="blogSec">
           <div className="container">
@@ -250,15 +268,19 @@ const Home = () => {
               </div>
             </div>
           </div>
-        <div className="endSectionBox">
-          <h5>Get The Latest Deals</h5>
-          <p>and receive $20 coupon for first shopping</p>
-          <form >
-            <input type="email" placeholder="Enter your Email Address"/>
-            <button>Subscribe <BsArrowRight /></button>
-          </form>
-        </div>
-
+          <div className="endSectionBox">
+            <h5>Get The Latest Deals</h5>
+            <p>and receive $20 coupon for first shopping</p>
+            <form>
+              <input type="email" placeholder="Enter your Email Address" />
+              <button>
+                Subscribe <BsArrowRight />
+              </button>
+            </form>
+          </div>
+        </section>
+        <section>
+          <Register/>
         </section>
       </main>
       <Footer />

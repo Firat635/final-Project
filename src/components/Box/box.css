@@ -1,11 +1,16 @@
 .box {
     position: relative;
     width: 226px;
-    height: 410px;
+    height: 430px;
     overflow: hidden;
+    border-radius: 7px;
     transition: 1s;
     background-color: #fff;
     margin: 10px;
+    p{
+        height: 47px;
+        overflow: hidden;
+    }
 
     .img {
         position: relative;
