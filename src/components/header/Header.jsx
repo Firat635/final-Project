@@ -7,6 +7,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
 import { PiShoppingCart } from "react-icons/pi";
 import { IoDiamond } from "react-icons/io5";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Header = () => {
   const [drop, setDrop] = useState(false);
@@ -994,21 +995,393 @@ const Header = () => {
                     <li>
                       <a href="/">
                         SHOP <IoIosArrowDown className="iconHome" />
+                        <div className="shopWebBox">
+                          <div className="shopWebInfo">
+                            <ul>
+                              <li>
+                                <a className="headerColorBlack" href="/">
+                                  Shop with sidebar
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">Shop List</a>
+                              </li>
+                              <li>
+                                <a href="/">Shop Grid 4 Columns</a>
+                              </li>
+                              <li>
+                                <a href="/">Shop Grid 3 Columns</a>
+                              </li>
+                              <li>
+                                <a href="/">Shop Grid 2 Columns</a>
+                              </li>
+                              <li>
+                                <a className="beforeNewText" href="/">
+                                  Shop Market
+                                </a>
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <a className="headerColorBlack" href="/">
+                                  Shop no sidebar
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">Shop Boxed No Sidebar</a>
+                              </li>
+                              <li>
+                                <a className="afterNewText" href="/">
+                                  Shop Fullwidth No Sidebar
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="shopWebInfo">
+                            <ul>
+                              <li>
+                                <a className="headerColorBlack" href="/">
+                                  Product Category
+                                </a>
+                              </li>
+                              <li>
+                                <a className="beforeNewText" href="/">
+                                  Product Category Boxed
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">Product Category Fullwidth</a>
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <a className="headerColorBlack" href="/">
+                                  Shop Pages
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">My Account</a>
+                              </li>
+                              <li>
+                                <a href="/">Wishlist</a>
+                              </li>
+                              <li>
+                                <a href="/">Cart</a>
+                              </li>
+                              <li>
+                                <a href="/">Cart Dropdown</a>
+                              </li>
+                              <li>
+                                <a className="beforeNewText" href="/">
+                                  Cart Popup
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="shopWebInfo">
+                            <ul>
+                              <li>
+                                <a className="afterNewText" href="/">
+                                  Cart Drawer
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">Shipping rates calculator</a>
+                              </li>
+                              <li>
+                                <a className="afterNewText" href="/">
+                                  Threshold free shipping
+                                </a>
+                              </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <a className="headerColorBlack" href="/">
+                                  Shop Options
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">Masonry Layout</a>
+                              </li>
+                              <li>
+                                <a href="/">Load more button</a>
+                              </li>
+                              <li>
+                                <a href="/">Infinite scrolling</a>
+                              </li>
+                              <li>
+                                <a href="/">Filter sidebar</a>
+                              </li>
+                              <li>
+                                <a href="/">Filter drawer</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="shopWebInfo">
+                            <ul className="shopWebInfoPhoto">
+                              <li>
+                                <a href="/">
+                                  <img
+                                    src="https://midas-theme.myshopify.com/cdn/shop/files/banner-1.jpg?v=1614724435"
+                                    alt=""
+                                  />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         PRODUCT <IoIosArrowDown className="iconHome" />
+                        <div className="productWebBox">
+                          <div className="productWebInfo">
+                            <ul>
+                              <li>
+                                <a className="headerColorBlack" href="/">
+                                  Product Details
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">Default</a>
+                              </li>
+                              <li>
+                                <a href="/">Centered</a>
+                              </li>
+                              <li>
+                                <a href="/">Extended Info</a>
+                              </li>
+                              <li>
+                                <a href="/">Gallery</a>
+                              </li>
+                              <li>
+                                <a href="/">Sticky Info</a>
+                              </li>
+                              <li>
+                                <a href="/">Boxed With Sidebar</a>
+                              </li>
+                              <li>
+                                <a href="/">Full Width</a>
+                              </li>
+
+                              <li>
+                                <a href="/">Masonry Sticky Info</a>
+                              </li>
+                              <li>
+                                <a className="afterNewText" href="/">
+                                  Disable default variantHot
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="productWebInfo">
+                            <ul>
+                              <li>
+                                <a className="headerColorBlack" href="/">
+                                  Product Options
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">Product video</a>
+                              </li>
+                              <li>
+                                <a className="beforeNewText" href="/">
+                                  Product 3D-AR
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">Product Pre-order</a>
+                              </li>
+                              <li>
+                                <a href="/">Product External / Affiliate</a>
+                              </li>
+                              <li>
+                                <a href="/">Products Grouped</a>
+                              </li>
+                              <li>
+                                <a href="/">Sticky add to cart</a>
+                              </li>
+                              <li>
+                                <a href="/">Variant Images Grouped</a>
+                              </li>
+                              <li>
+                                <a className="beforeNewText" href="/">
+                                  Shipping info by location
+                                </a>
+                              </li>
+                              <li>
+                                <a className="beforeNewText" href="/">
+                                  Delivery period
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="productWebInfo">
+                            <ul className="shopWebInfoPhoto">
+                              <li>
+                                <a href="/">
+                                  <img
+                                    src="https://midas-theme.myshopify.com/cdn/shop/files/banner-2.jpg?v=1614724435"
+                                    alt=""
+                                  />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         PAGES <IoIosArrowDown className="iconHome" />
+                        <div className="pagesWebBox">
+                          <div className="pagesWebInfo">
+                            <ul>
+                              <li>
+                                <a href="/">
+                                  About <IoIosArrowForward />
+                                  <div className="rightDropDown">
+                                    <ul>
+                                      <li>
+                                        <a href="/">About 01</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">About 02</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">
+                                  Contact <IoIosArrowForward />
+                                  <div className="rightDropDown">
+                                    <ul>
+                                      <li>
+                                        <a href="/">Contact 01</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Contact 02</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">
+                                  Login <IoIosArrowForward />
+                                  <div className="rightDropDown">
+                                    <ul>
+                                      <li>
+                                        <a href="/">Login Modal</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Login page</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">FAQs</a>
+                              </li>
+                              <li>
+                                <a href="/">Error 404</a>
+                              </li>
+                              <li>
+                                <a href="/">Coming Soon</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         BLOG <IoIosArrowDown className="iconHome" />
+                        <div className="blogWebBox">
+                          <div className="blogWebInfo">
+                            <ul>
+                            
+                              <li>
+                                <a href="/">Classic</a>
+                              </li>
+                              <li>
+                                <a href="/">Listing</a>
+                              </li>
+                              <li>
+                                <a href="/">
+                                Grid <IoIosArrowForward />
+                                  <div className="leftDropDown">
+                                    <ul>
+                                      <li>
+                                        <a href="/">Grid 2 columns</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Grid 3 columns</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Grid 4 columns</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Grid sidebar</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">
+                                Masonry <IoIosArrowForward />
+                                  <div className="leftDropDown">
+                                    <ul>
+                                      <li>
+                                        <a href="/">Blog masonry grid</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Blog masonry sidebar</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">
+                                Mask <IoIosArrowForward />
+                                  <div className="leftDropDown">
+                                    <ul>
+                                      <li>
+                                        <a href="/">Blog mask grid</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Blog mask masonry</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="/">
+                                Single Post <IoIosArrowForward />
+                                  <div className="leftDropDown">
+                                    <ul>
+                                      <li>
+                                        <a href="/">Default with sidebar</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Fullwidth no sidebar</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Fullwidth with sidebar</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </a>
                     </li>
                     <li>

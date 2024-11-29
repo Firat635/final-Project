@@ -197,10 +197,195 @@
     }
 }
 
+.productsShopBox {
+    .textBoxAll {
+        text-align: center;
+        margin: 30px 0px;
+
+        .textFeatured {
+            color: #333333;
+            border-bottom: solid 1px #A6C76C;
+        }
+
+        a {
+            font-size: 27px;
+            font-weight: 600;
+            color: #999999;
+            padding: 10px;
+        }
+    }
+}
+
+#timeSection {
+    background-color: #F8F8F8;
+    padding: 40px 0px;
+
+    .container {
+
+        .timeBoxAll {
+            display: flex;
+            background-color: #fff;
+            justify-content: space-between;
+
+            .timeBoxAllText {
+                padding: 40px;
+
+                h5 {
+                    color: #A6C76C;
+                    line-height: 1.3;
+                    font-weight: 400;
+
+                }
+
+                h1 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    color: #333333;
+                }
+
+                a {
+                    color: #333333;
+                    font-size: 22px;
+                    font-weight: 700;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #A6C76C;
+                    }
+                }
+
+                p {
+                    font-size: 23px;
+                    color: #333333;
+                    font-weight: 700;
+                }
+
+                button {
+                    font-weight: 400;
+                    background-color: transparent;
+                    color: #333333;
+                    border: solid 1px #959595;
+                    width: 170px;
+                    outline: none;
+                    padding: 8px 0px;
+                    text-transform: uppercase;
+                    margin: 20px 0px;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #A6C76C;
+                        border-color: transparent;
+
+                    }
+                }
+            }
+
+            .timeBoxAllPhoto {
+                img {
+                    height: 437px;
+                    width: 455px;
+                }
+            }
+        }
+
+        .timeSecLeftBox {
+            background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-5_f26a428e-4506-4598-9f97-3046f4dafd60.jpg?v=1614781580');
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+
+            p {
+                color: #fff;
+                margin: 0;
+
+            }
+
+            h1 {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: 3px;
+
+
+                margin: 15px auto;
+            }
+
+            button {
+                font-weight: 400;
+                background-color: transparent;
+                color: #fff;
+                border: none;
+                border-bottom: solid 3px #fff;
+                width: 160px;
+                outline: none;
+                padding: 8px 0px;
+                font-size: 13px;
+                letter-spacing: 1.5px;
+                transition: .5s;
+
+                &:hover {
+                    color: #333;
+                    background-color: #fff;
+                    border-color: transparent;
+
+                }
+            }
+
+        }
+    }
+
+
+
+
+}
+
+#productsSec {
+    h1 {
+        text-align: center;
+        padding-top: 20px;
+        margin: 30px 0px;
+        font-size: 30px;
+    }
+
+    .productsList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            gap: 10px;
+            font-size: 15px;
+            padding: 0;
+            text-transform: uppercase;
+
+            .allText {
+                color: #333333;
+                border-bottom: solid 1px #33333387;
+
+            }
+
+            a {
+                padding: 7px;
+                color: #959595;
+
+            }
+        }
+    }
+}
 
 #blogSec {
+    .container {
+        border-top: solid 1px #9595956c;
+        padding-top: 30px;
+    }
+
     h2 {
         text-align: center;
+        margin: 30px;
     }
 
     .blogBoxAll {
@@ -208,6 +393,12 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        .blogBoxPhoto {
+            img {
+                width: 100%;
+            }
+        }
 
         p {
             color: #ccc;
@@ -223,22 +414,124 @@
             font-weight: 700;
             letter-spacing: 1px;
             transition: .5s;
+            margin: 5px 0px 15px 0px;
 
             &:hover {
                 color: #A6C76C;
             }
         }
-        button{
+
+        button {
             border: none;
             background-color: transparent;
             color: #A6C76C;
             font-size: 14px;
             font-weight: 500;
-            border: solid;
-            .storeIcon{
+            transition: .5s;
+            border-bottom: solid 2px transparent;
+
+            .storeIcon {
                 font-weight: 600;
                 font-size: 16px;
-                display: none;
+                transform: scale(0);
+                transition: .3s;
+
+
+            }
+
+            &:hover {
+                border-bottom: solid 2px #A6C76C;
+
+                .storeIcon {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .blogSecBtnBox {
+        text-align: center;
+        margin: 30px;
+
+        button {
+            border: none;
+            background-color: transparent;
+            color: #333;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            border-bottom: solid 2px#333;
+            padding: 8px 15px;
+            transition: .5s;
+
+            &:hover {
+                background-color: #333;
+                color: #fff;
+            }
+        }
+    }
+}
+
+#homeEndSection {
+    background-color: #FCF8E7;
+    .freeBox {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .freeIcon {
+            height: 77px;
+            width: 77px;
+            padding: 15px;
+        }
+
+        h6 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 15px;
+
+
+        }
+
+        p {
+            margin: 0px;
+            font-size: 15px;
+            color: #959595;
+        }
+    }
+    .endSectionBox{
+        background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/parallax.jpg?v=1614781580');
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        h5{
+            margin-top: 30px;
+            color: #fff;
+            
+        }
+        p{
+            color: #f0f0f0;
+            margin: 10px 0px 20px 0px;
+        }
+        form{
+            width: 100%;
+            text-align: center;
+            padding: 15px 0px 20px 0px;
+            input{
+                outline: none;
+                padding: 11px 20px;
+                border: none;
+                width: 35%;
+            }
+            button{
+                padding: 11px 25px;
+                border: none;
+                background-color: #A6C76C;
+                color: #fff;
             }
         }
     }
