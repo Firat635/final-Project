@@ -14,6 +14,7 @@ import { FaTumblr } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { productDetail } from "../../redux/feature/productDetail/ProductDetailSlice";
+import { IoIosArrowUp } from "react-icons/io";
 
 export const Detail = () => {
   const [count, setCount] = useState(0);
@@ -155,6 +156,12 @@ export const Detail = () => {
                 </div>
               </div>
             )}
+          </div>
+          {/* iconTop */}
+          <div class="buttonIconTop">
+            <a href="#header">
+              <IoIosArrowUp className="ButtonIconTopArr" />
+            </a>
           </div>
         </section>
       </main>

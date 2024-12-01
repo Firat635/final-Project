@@ -8,12 +8,13 @@ import { FaRegHeart } from "react-icons/fa";
 import { PiShoppingCart } from "react-icons/pi";
 import { IoDiamond } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
+import { Register } from "../register/Register";
 
 const Header = () => {
   const [drop, setDrop] = useState(false);
 
   return (
-    <header>
+    <header id="header">
       <div className="containerTop">
         <div className="topHeader">
           <div className="topHeaderText">
@@ -59,6 +60,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
+          
         </div>
         <div className="middleHeader py-4">
           <div className="logoBox">
@@ -129,6 +131,7 @@ const Header = () => {
                 <option value="Watch">Watch</option>
               </select>
               <button className="searchBox">
+                
                 <LiaSearchSolid className="searchBoxIcon" />
               </button>
             </form>
@@ -136,7 +139,7 @@ const Header = () => {
           <div className="headerIconBox">
             <div className="heartIconTextBox">
               <a href="http://">
-                <AiOutlineUser className="iconText" />
+                <AiOutlineUser  className="iconText" />
                 <p>Account</p>
               </a>
             </div>

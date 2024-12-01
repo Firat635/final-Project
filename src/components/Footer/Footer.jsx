@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container">
         <div className="row headOne">
           <div className="row">
-            <div className="col-xl-6 col-md-6 col-sm-12">
+            <div className="col-xl-6 col-md-12 col-sm-12">
               <div className="foot-left">
                 <div className="logo">
                   <img
@@ -29,11 +29,11 @@ const Footer = () => {
                 </p>
                 <div className="contact">
                   <div className="row">
-                    <div className="col-xl-5 col-md-6 col-sm-12">
+                    <div className="col-xl-5 col-md-6 col-sm-12 mt-3">
                       <span>Got Question? Call us 24/7</span>
                       <p>+98 765 432</p>
                     </div>
-                    <div className="col-xl-7 col-md-6 col-sm-12 imgHead">
+                    <div className="col-xl-7 col-md-6 col-sm-12 my-3 imgHead">
                       <span>Payment Method</span>
                       <div className="img">
                         <img
@@ -46,9 +46,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-md-6 col-sm-12">
+            <div className="col-xl-6 col-md-12 col-sm-12">
               <div className="row">
-                <div className="col-xl-4 col-md-6 col-sm-12">
+                <div className="col-xl-4 col-md-4 col-sm-4 col-12">
                   <h4>Useful Links</h4>
                   <ul>
                     <li>About Midas</li>
@@ -58,7 +58,7 @@ const Footer = () => {
                     <li>Log in</li>
                   </ul>
                 </div>
-                <div className="col-xl-4 col-md-6 col-sm-12">
+                <div className="col-xl-4 col-md-4 col-sm-4 col-12">
                   <h4>Customer Service</h4>
                   <ul>
                     <li>Payment Methods</li>
@@ -69,7 +69,7 @@ const Footer = () => {
                     <li>Privacy Policy</li>
                   </ul>
                 </div>
-                <div className="col-xl-4 col-md-6 col-sm-12">
+                <div className="col-xl-4 col-md-4 col-sm-4 col-12">
                   <h4>My Account</h4>
                   <ul>
                     <li>Sign In</li>

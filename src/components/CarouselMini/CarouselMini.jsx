@@ -20,7 +20,7 @@ const CarouselMini = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="carousel-container">
       <Swiper
         slidesPerView={5}
         spaceBetween={20}
@@ -29,9 +29,10 @@ const CarouselMini = () => {
         loop={true}
         className="mySwiper"
         breakpoints={{
-          640: { slidesPerView: 2, spaceBetween: 10 },
-          768: { slidesPerView: 3, spaceBetween: 15 },
-          1024: { slidesPerView: 5, spaceBetween: 20 },
+          280: { slidesPerView: 2, spaceBetween: 10 }, 
+          576: { slidesPerView: 4, spaceBetween: 15 },
+          768: { slidesPerView: 5, spaceBetween: 20 }, 
+          1024: { slidesPerView: 6, spaceBetween: 20 }, 
         }}
         modules={[Navigation]}
       >

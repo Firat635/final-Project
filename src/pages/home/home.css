@@ -1,3 +1,44 @@
+#heroSection {
+    position: relative;
+
+    .buttonIconTop {
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        position: fixed;
+        z-index: 7777;
+
+        .ButtonIconTopArr {
+            transition: .5s;
+            border: 1px solid rgba(128, 128, 128, 0.542);
+            height: 40px;
+            width: 40px;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: gray;
+            background-color: #faf8f8c2;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                transform: translateY(-5px);
+
+            }
+
+
+
+
+
+        }
+    }
+
+
+}
+
+
+
 #decorBox {
     .container {
         .decorBoxTables {
@@ -94,106 +135,111 @@
             }
         }
 
-        .decorBoxHomeDecor {
-            background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-3_994e8f4e-87cc-4172-bb1c-715bbaf43a37.jpg?v=1614781570&width=1%27);%20background-image:%20url(&quot;https://midas-theme.myshopify.com/cdn/shop/files/banner-3_994e8f4e-87cc-4172-bb1c-715bbaf43a37.jpg?v=1614781570&quot');
-            box-sizing: border-box;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 190px;
-            padding: 20px;
+        .decorBoxHomeDecorAll {
 
 
-            p {
-                font-size: 14px;
-                color: gray;
-                margin: 8px 0px;
+            .decorBoxHomeDecor {
+                background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-3_994e8f4e-87cc-4172-bb1c-715bbaf43a37.jpg?v=1614781570&width=1%27);%20background-image:%20url(&quot;https://midas-theme.myshopify.com/cdn/shop/files/banner-3_994e8f4e-87cc-4172-bb1c-715bbaf43a37.jpg?v=1614781570&quot');
+                box-sizing: border-box;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 190px;
+                padding: 20px;
+
+
+                p {
+                    font-size: 14px;
+                    color: gray;
+                    margin: 8px 0px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #000;
+                }
+
+                .fromText {
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+
+                button {
+                    font-weight: 400;
+                    background-color: transparent;
+                    color: #333333;
+                    border: none;
+                    border-bottom: solid 3px #333333;
+                    width: 160px;
+                    outline: none;
+                    padding: 8px 0px;
+                    font-size: 13px;
+                    letter-spacing: 1.5px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #333333;
+                        border-color: transparent;
+
+                    }
+                }
             }
 
-            h3 {
-                font-size: 20px;
-                font-weight: 700;
-                color: #000;
-            }
+            .decorBoxHomeDecorBox {
+                background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-4_d2586afe-cc5e-4077-ab47-43d033645507.jpg?v=1614781570');
+                box-sizing: border-box;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 200px;
+                margin-top: 10px;
+                padding: 20px;
 
-            .fromText {
-                font-weight: 300;
-                font-size: 20px;
-            }
 
-            button {
-                font-weight: 400;
-                background-color: transparent;
-                color: #333333;
-                border: none;
-                border-bottom: solid 3px #333333;
-                width: 160px;
-                outline: none;
-                padding: 8px 0px;
-                font-size: 13px;
-                letter-spacing: 1.5px;
-                transition: .5s;
+                p {
+                    font-size: 14px;
+                    color: gray;
+                    margin: 8px 0px;
+                }
 
-                &:hover {
-                    color: #fff;
-                    background-color: #333333;
-                    border-color: transparent;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #000;
+                }
 
+                .fromText {
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+
+                button {
+                    font-weight: 400;
+                    background-color: transparent;
+                    color: #333333;
+                    border: none;
+                    border-bottom: solid 3px #333333;
+                    width: 160px;
+                    outline: none;
+                    padding: 8px 0px;
+                    font-size: 13px;
+                    letter-spacing: 1.5px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #333333;
+                        border-color: transparent;
+
+                    }
                 }
             }
         }
 
-        .decorBoxHomeDecorBox {
-            background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/banner-4_d2586afe-cc5e-4077-ab47-43d033645507.jpg?v=1614781570');
-            box-sizing: border-box;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 200px;
-            margin-top: 10px;
-            padding: 20px;
-
-
-            p {
-                font-size: 14px;
-                color: gray;
-                margin: 8px 0px;
-            }
-
-            h3 {
-                font-size: 20px;
-                font-weight: 700;
-                color: #000;
-            }
-
-            .fromText {
-                font-weight: 300;
-                font-size: 20px;
-            }
-
-            button {
-                font-weight: 400;
-                background-color: transparent;
-                color: #333333;
-                border: none;
-                border-bottom: solid 3px #333333;
-                width: 160px;
-                outline: none;
-                padding: 8px 0px;
-                font-size: 13px;
-                letter-spacing: 1.5px;
-                transition: .5s;
-
-                &:hover {
-                    color: #fff;
-                    background-color: #333333;
-                    border-color: transparent;
-
-                }
-            }
-        }
     }
 }
 
@@ -226,9 +272,12 @@
             display: flex;
             background-color: #fff;
             justify-content: space-between;
+            height: 100%;
+            width: 100%;
 
             .timeBoxAllText {
                 padding: 40px;
+                width: 55%;
 
                 h5 {
                     color: #A6C76C;
@@ -282,9 +331,13 @@
             }
 
             .timeBoxAllPhoto {
+                display: flex;
+                align-items: end;
+                width: 45%;
+
                 img {
-                    height: 437px;
-                    width: 455px;
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }
@@ -474,11 +527,13 @@
 
 #homeEndSection {
     background-color: #FCF8E7;
+
     .freeBox {
         cursor: pointer;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
+
         .freeIcon {
             height: 77px;
             width: 77px;
@@ -499,7 +554,8 @@
             color: #959595;
         }
     }
-    .endSectionBox{
+
+    .endSectionBox {
         background-image: url('https://midas-theme.myshopify.com/cdn/shop/files/parallax.jpg?v=1614781580');
         background-position: center;
         background-repeat: no-repeat;
@@ -508,26 +564,31 @@
         justify-content: center;
         flex-direction: column;
         padding: 30px;
-        h5{
+
+        h5 {
             margin-top: 30px;
             color: #fff;
-            
+
         }
-        p{
+
+        p {
             color: #f0f0f0;
             margin: 10px 0px 20px 0px;
         }
-        form{
+
+        form {
             width: 100%;
             text-align: center;
             padding: 15px 0px 20px 0px;
-            input{
+
+            input {
                 outline: none;
                 padding: 11px 20px;
                 border: none;
                 width: 35%;
             }
-            button{
+
+            button {
                 padding: 11px 25px;
                 border: none;
                 background-color: #A6C76C;
@@ -536,9 +597,284 @@
         }
     }
 }
-.boxContainer{
+
+.boxContainer {
     width: 85%;
     margin: 0 auto;
     justify-content: space-between;
     gap: 10px;
+}
+
+
+/* Responsiv */
+
+
+@media (max-width:1140px) {}
+
+@media (max-width:992px) {
+    #decorBox {
+        & .container {
+            .decorBoxHomeDecorAll {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            .timeBoxAll {
+                flex-direction: column;
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllText {
+                    padding: 40px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllPhoto {
+                    display: flex;
+                    align-items: end;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            .timeSecLeftBox {
+                background-image: url(https://midas-theme.myshopify.com/cdn/shop/files/banner-5_f26a428e-4506-4598-9f97-3046f4dafd60.jpg?v=1614781580);
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                padding: 10px;
+                padding-top: 30px;
+                text-align: center;
+            }
+        }
+    }
+
+    #blogSec {
+        .blogBoxAll {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 30px 0px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #decorBox {
+        & .container {
+            .decorBoxHomeDecorAll {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllText {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllPhoto {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    overflow: hidden;
+                    justify-content: center;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    #timeSection {
+        & .container {
+            .timeSecLeftBox {
+                background-image: url(https://midas-theme.myshopify.com/cdn/shop/files/banner-5_f26a428e-4506-4598-9f97-3046f4dafd60.jpg?v=1614781580);
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                width: 80%;
+                padding: 10px;
+                padding-top: 30px;
+                text-align: center;
+                margin: 10px auto;
+            }
+        }
+    }
+
+    #blogSec {
+        & .blogBoxAll {
+            .blogBoxPhoto {
+                width: 100%;
+            }
+        }
+    }
+
+    #homeEndSection {
+        .freeBox {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-top: 20px;
+        }
+    }
+
+    #homeEndSection {
+        & .endSectionBox {
+            & form {
+                input {
+
+                    width: 55%;
+                }
+            }
+        }
+    }
+
+    #decorBox {
+        & .container {
+            .decorBoxKitchenware {
+                margin: 20px 0px 10px 0px;
+            }
+        }
+    }
+
+    #decorBox {
+        & .container {
+            .decorBoxHomeDecorAll {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width:576px) {
+    .head {
+        & .bodyMainPhoto {
+            h1 {
+                font-size: 35px !important;
+            }
+        }
+    }
+
+    .head {
+        .bodyMainPhoto {
+            width: 250px !important;
+        }
+    }
+
+    .head {
+        .bodyMain {
+            width: 250px !important;
+
+        }
+    }
+
+    .head {
+        & .bodyMain {
+            h1 {
+                font-size: 35px !important;
+
+            }
+        }
+
+    }
+
+    .productsShopBox {
+        .textBoxAll {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    #timeSection {
+        & .container {
+            & .timeBoxAll {
+                .timeBoxAllText {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #productsSec {
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    #productsSec {
+        & .productsList {
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+
+    #homeEndSection {
+        & .endSectionBox {
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    #homeEndSection {
+        & .endSectionBox {
+            & form {
+                input {
+                    width: 100%;
+                    margin: 20px 0px;
+                }
+            }
+        }
+    }
+
+    #homeEndSection {
+        .freeBox {}
+    }
 }

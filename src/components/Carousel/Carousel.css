@@ -11,15 +11,14 @@
     .bodyMain{
         z-index: 1;
         position: absolute;
-       
-        width: 35%;
+        width: 354px;
         top: 140px;
-        right: 10px;
+        right: 40px;
         span{
             color: rgba(128, 128, 128, 0.626);
         }
         h1{
-            font-size: 60px;
+            font-size: 55px;
             width: 100%;
             font-weight: 400;
             line-height: 1.2;
@@ -46,16 +45,15 @@
         z-index: 1;
         position: absolute;
        
-        width: 35%;
+        width: 370 px;
         top: 140px;
         left: 40px;
         span{
             color: rgba(128, 128, 128, 0.626);
         }
-        h1{
-            font-size: 60px;
+        h1{            font-size: 52px;
             width: 100%;
-            font-weight: 500;
+            font-weight: 400;
             line-height: 1.2;
             margin: 10px 0px 20px 0px;
         }
@@ -97,3 +95,30 @@
 
 }
 
+
+/* Responsiv */
+
+@media  (max-width:1140px){
+    .head {
+        .bodyMainPhoto {
+            z-index: 1;
+            position: absolute;
+            width: 436px;
+            top: 140px;
+            left: 40px;
+        }
+    }
+  
+}
+
+@media (max-width:992px) {
+    
+}
+
+
+
+/* Mobile */
+
+@media (max-width:576px) {
+   
+}

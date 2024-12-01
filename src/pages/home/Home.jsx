@@ -17,6 +17,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProduct } from "../../redux/feature/product/ProductSlice.js";
 import Box from "../../components/Box/Box.jsx";
 import { Register } from "../../components/register/Register.jsx";
+import { IoIosArrowUp } from "react-icons/io";
+
 // import Box from "../../components/Box/Box.jsx";
 
 const Home = () => {
@@ -31,17 +33,27 @@ const Home = () => {
   return (
     <>
       <Header />
+     
       <main>
-        <section>
+        <section id="heroSection">
           <Carousel />
+          <div class="buttonIconTop">
+          <a href="#header">
+            <IoIosArrowUp className="ButtonIconTopArr" />
+          </a>
+        </div>
         </section>
-        <section className="mb-5">
+        
+       
+        <section className="my-4">
           <CarouselMini />
+         
         </section>
         <section id="decorBox">
+         
           <div className="container">
             <div className="row">
-              <div className="col-12 col-lg-5 col-md-4 col-sm-12 ">
+              <div className="col-12 col-lg-5 col-md-6 col-sm-12 ">
                 <div className="decorBoxTables">
                   <p>Clearence</p>
                   <h3>Coffee Tables</h3>
@@ -51,7 +63,7 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-              <div className="col-12 col-lg-3 col-md-4 col-sm-12 ">
+              <div className="col-12 col-lg-3 col-md-6 col-sm-12 ">
                 <div className="decorBoxKitchenware">
                   <p>On Sale</p>
                   <h3>Kitchenware</h3>
@@ -62,31 +74,34 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-              <div className="col-12 col-lg-4 col-md-4 col-sm-12 ">
-                <div className="decorBoxHomeDecor">
-                  <p>Clearance</p>
-                  <h3>Home Decor</h3>
-                  <p className="fromText">up to 30% off</p>
-                  <button className="discoverBtn">
-                    Discover Now
-                    <BsArrowRight />
-                  </button>
-                </div>
-                <div className="decorBoxHomeDecorBox">
-                  <p>New Arrivals</p>
-                  <h3>
-                    Collection <br />
-                    Chairs
-                  </h3>
-                  <p className="fromText">from $39.00</p>
-                  <button className="discoverBtn">
-                    Shop Now
-                    <BsArrowRight />
-                  </button>
+              <div className="col-12 col-lg-4 col-md-12 col-sm-12 ">
+                <div className="decorBoxHomeDecorAll ">
+                  <div className="decorBoxHomeDecor">
+                    <p>Clearance</p>
+                    <h3>Home Decor</h3>
+                    <p className="fromText">up to 30% off</p>
+                    <button className="discoverBtn">
+                      Discover Now
+                      <BsArrowRight />
+                    </button>
+                  </div>
+                  <div className="decorBoxHomeDecorBox">
+                    <p>New Arrivals</p>
+                    <h3>
+                      Collection <br />
+                      Chairs
+                    </h3>
+                    <p className="fromText">from $39.00</p>
+                    <button className="discoverBtn">
+                      Shop Now
+                      <BsArrowRight />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        
         </section>
 
         <section className="productsShopBox my-2">
@@ -227,7 +242,7 @@ const Home = () => {
         <section id="homeEndSection">
           <div className="container py-5">
             <div className="row">
-              <div className="col-12 col-lg-3 col-md-6 col-sm-12">
+              <div className="col-12 col-lg-3 col-md-6 col-sm-6 ">
                 <div className="freeBox">
                   <GoRocket className="freeIcon" />
                   <div className="freeText">
@@ -236,7 +251,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-lg-3 col-md-6 col-sm-12">
+              <div className="col-12 col-lg-3 col-md-6 col-sm-6">
                 <div className="freeBox">
                   <MdOutlineRestartAlt className="freeIcon" />
 
@@ -246,7 +261,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-lg-3 col-md-6 col-sm-12">
+              <div className="col-12 col-lg-3 col-md-6 col-sm-6">
                 <div className="freeBox">
                   <IoIosInformationCircleOutline className="freeIcon" />
 
@@ -256,7 +271,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-lg-3 col-md-6 col-sm-12">
+              <div className="col-12 col-lg-3 col-md-6 col-sm-6">
                 <div className="freeBox">
                   <IoHelpBuoyOutline className="freeIcon" />
 
@@ -280,7 +295,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <Register/>
+          <Register />
         </section>
       </main>
       <Footer />

@@ -25,7 +25,7 @@ const Carousel = () => {
           
           <div className="bodyMainPhoto">
             <span>Deals and Promotions</span>
-            <h1>Wooden Sideboard Table</h1>
+            <h1>Wooden <br /> Sideboard Table</h1>
             <button>
               Shop Now <BsArrowRight />
             </button>

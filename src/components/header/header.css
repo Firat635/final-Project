@@ -254,9 +254,11 @@ header {
                 .endHeaderBox {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
+                    width: 100%;
 
                     .headerDropdown {
-                        width: 250px;
+                        width: 245px;
                         display: flex;
                         align-items: center;
 
@@ -360,6 +362,7 @@ header {
                             min-width: 100%;
                             border-radius: 5px;
                             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
                             li {
                                 padding: 8px 20px;
                                 border-bottom: solid .5px rgba(128, 128, 128, 0.404);
@@ -428,10 +431,10 @@ header {
                                 padding: 0px;
 
                                 li {
-                                    padding: 7px 17px;
+                                    padding: 7px 13px;
                                     margin: 0px;
                                     position: relative;
-                                    
+
                                     &::before {
                                         position: absolute;
                                         content: '';
@@ -477,7 +480,7 @@ header {
 
                                         font-weight: 500;
                                         font-size: 15px;
-                                        
+
 
                                         color: #000;
 
@@ -874,6 +877,7 @@ header {
                                         left: -350px;
                                         background-color: #fff;
                                         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
                                         .productWebInfo {
                                             margin-top: 28px;
                                             background-color: #fff;
@@ -983,6 +987,7 @@ header {
                                         left: 0px;
                                         background-color: #fff;
                                         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
                                         .pagesWebInfo {
                                             margin-top: 8px;
                                             background-color: #fff;
@@ -1033,17 +1038,19 @@ header {
                                                         align-items: center;
                                                         justify-content: space-between;
                                                         position: relative;
-                                                         &:hover{
-                                                            .rightDropDown{
-                                                                ul{
-                                                                    li{
-                                                                        a{  
+
+                                                        &:hover {
+                                                            .rightDropDown {
+                                                                ul {
+                                                                    li {
+                                                                        a {
                                                                             color: gray;
                                                                         }
                                                                     }
                                                                 }
                                                             }
-                                                         }
+                                                        }
+
                                                         .rightDropDown {
                                                             position: absolute;
                                                             left: 260px;
@@ -1055,10 +1062,11 @@ header {
                                                             transition: transform 0.5s ease, opacity 0.5s ease;
                                                             pointer-events: none;
                                                             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                                            ul{
-                                                                li{
-                                                                    &:hover{
-                                                                        a{
+
+                                                            ul {
+                                                                li {
+                                                                    &:hover {
+                                                                        a {
                                                                             color: #A6C76C;
                                                                         }
                                                                     }
@@ -1090,6 +1098,7 @@ header {
                                         visibility: visible;
                                         animation: fadeIn 0.5s ease-in-out forwards;
                                     }
+
                                     .blogWebBox {
                                         position: absolute;
                                         display: flex;
@@ -1103,6 +1112,7 @@ header {
                                         left: 0px;
                                         background-color: #fff;
                                         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
                                         .blogWebInfo {
                                             margin-top: 8px;
                                             background-color: #fff;
@@ -1153,18 +1163,21 @@ header {
                                                         align-items: center;
                                                         justify-content: space-between;
                                                         position: relative;
-                                                         &:hover{
-                                                            .leftDropDown{
+
+                                                        &:hover {
+                                                            .leftDropDown {
                                                                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                                                                ul{
-                                                                    li{
-                                                                        a{  
+
+                                                                ul {
+                                                                    li {
+                                                                        a {
                                                                             color: gray;
                                                                         }
                                                                     }
                                                                 }
                                                             }
-                                                         }
+                                                        }
+
                                                         .leftDropDown {
                                                             position: absolute;
                                                             right: 260px;
@@ -1175,10 +1188,11 @@ header {
                                                             transform: translateX(-30px);
                                                             transition: transform 0.5s ease, opacity 0.5s ease;
                                                             pointer-events: none;
-                                                            ul{
-                                                                li{
-                                                                    &:hover{
-                                                                        a{
+
+                                                            ul {
+                                                                li {
+                                                                    &:hover {
+                                                                        a {
                                                                             color: #A6C76C;
                                                                         }
                                                                     }
@@ -1232,7 +1246,7 @@ header {
                         color: #000;
 
                         .diamondIcon {
-                            margin: 0px 17px 0px 15px;
+                            margin: 0px 10px 0px 15px;
                             font-size: 16px;
                         }
 
@@ -1273,3 +1287,161 @@ header {
         display: none;
     }
 }
+
+
+
+
+/* Responsiv */
+
+@media (max-width:1140px) {
+    header {
+        & .containerTop {
+            & .endHeader {
+                & .endHeaderBoxAll {
+                    .headerDiscountBox {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .endHeader {
+                & .endHeaderBoxAll {
+                    & .endHeaderBox {
+                        & .navMenuBox {
+                            & .navMenu {
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .middleHeader {
+                & .headerFrom {
+                    & form {
+                        .searchBox {
+
+                            padding: 0px 8px 0px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header {
+        & .containerTop {
+            & .middleHeader {
+                & .headerIconBox {
+                    & a {
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        header {
+            & .containerTop {
+                & .middleHeader {
+                    & .headerFrom {
+                        & form {
+                            select {
+                                width: 150px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        header {
+            & .containerTop {
+                & .endHeader {
+                    & .endHeaderBoxAll {
+                        .headerDiscountBox {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        header {
+            & .containerTop {
+                & .middleHeader {
+                    & .headerFrom {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        header {
+            & .containerTop {
+                & .endHeader {
+                    display: none;
+                }
+            }
+        }
+
+        header {
+            & .containerTop {
+                & .middleHeader {
+                    & .headerIconBox {
+                        & a {
+                            .iconText {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:768px) {
+            header {
+                & .containerTop {
+                    .topHeader {
+                        display: none;
+                    }
+                }
+            }
+
+            header {
+                & .containerTop {
+                    & .middleHeader {
+                        & .headerIconBox {
+                            & .iconTextBoxBefore {
+                                &::before {
+                                    height: 17px;
+                                    width: 17px;
+                                    font-size: 12px;
+                                    right: -14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width:576px) {}
